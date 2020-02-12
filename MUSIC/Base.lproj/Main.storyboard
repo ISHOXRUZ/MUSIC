@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MUSIC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="246921810_255364" translatesAutoresizingMaskIntoConstraints="NO" id="ZEQ-vE-AQd">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="iaO-F1-VTE">
+                                <rect key="frame" x="127" y="321" width="160" height="254"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RVe-ch-6vv">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="kWt-Q5-DhR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <size key="titleShadowOffset" width="3" height="3"/>
+                                        <state key="normal" title="Play" image="flatDark15">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="Play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cLa-Y5-mwG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jjC-dQ-TlY">
+                                        <rect key="frame" x="0.0" y="103" width="150" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="nfT-I5-j1L"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <size key="titleShadowOffset" width="3" height="3"/>
+                                        <state key="normal" title="Pause" image="flatDark13">
+                                            <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="Pause:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ons-p3-rOa"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J3g-wY-jlm">
+                                        <rect key="frame" x="0.0" y="206" width="160" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="wh4-ed-6pS"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <size key="titleShadowOffset" width="3" height="3"/>
+                                        <state key="normal" title="Restart" image="flatDark20">
+                                            <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="Restart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wgg-KH-nLy"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZEQ-vE-AQd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="7kM-kt-FSd"/>
+                            <constraint firstItem="ZEQ-vE-AQd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="I6B-Kc-J6V"/>
+                            <constraint firstItem="iaO-F1-VTE" firstAttribute="centerX" secondItem="ZEQ-vE-AQd" secondAttribute="centerX" id="K5o-td-RvF"/>
+                            <constraint firstAttribute="bottom" secondItem="ZEQ-vE-AQd" secondAttribute="bottom" id="KRM-Kf-rEL"/>
+                            <constraint firstItem="iaO-F1-VTE" firstAttribute="centerY" secondItem="ZEQ-vE-AQd" secondAttribute="centerY" id="rfs-wC-Uvv"/>
+                            <constraint firstItem="ZEQ-vE-AQd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="u82-ER-ced"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.33333333333334" y="133.25892857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="246921810_255364" width="720" height="1280"/>
+        <image name="flatDark13" width="48" height="48"/>
+        <image name="flatDark15" width="48" height="48"/>
+        <image name="flatDark20" width="48" height="48"/>
+    </resources>
+</document>
